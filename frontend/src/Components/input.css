@@ -1,0 +1,29 @@
+.input-div {
+    width: 40%;
+  
+  }
+  .postal-div {
+    color: white;
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(to right, #1da4c8, #5cbbbf);
+  
+  
+  }
+  .zip-input{
+    background: white;
+    color: black;
+    padding:5px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    border: none;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .input-div {
+      width: 100%;
+    }
+  }
+  

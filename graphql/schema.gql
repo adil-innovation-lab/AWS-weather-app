@@ -1,0 +1,9 @@
+type DataOutput {
+  date: String
+  temp: String
+}
+
+type Query {
+  getAll(zipcode: String!): [DataOutput]
+  getCurrent(zipcode: String!): String!
+}

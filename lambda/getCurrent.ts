@@ -35,7 +35,7 @@ async function getCurrent(zipcode: String) {
                 // zipcode as unique id in the DynamoDB table
                 Key: { id: `${zipcode}` },
                 ExpressionAttributeNames: { "#date": `${today.toString()}` },
-                ExpressionAttributeValues: { ":date": `${result.current.temp_f }` },
+                ExpressionAttributeValues: { ":date": `${result.current.temp_f } °F` },
                 UpdateExpression: "set #date = :date",
                 // ReturnValues: "UPDATED_NEW"
             };
